@@ -43,7 +43,6 @@ span{
     margin-top: 1.5em;
 }
 .btns a{
-    font-weight: 600;
     padding: .5em 1.75em;
     border: 1px var(--roman-silver) solid;
     border-radius: 11px;
@@ -54,15 +53,19 @@ span{
     text-decoration: none;
 }
 .btns a:first-of-type{
-    background: var(--roman-silver);
-    color: var(--rich-black);
-}
-.btns a:first-of-type:hover{
     background: var(--bellus);
     color: var(--roman-silver-gradient);
 }
+.btns a:first-of-type:hover{
+    background: var(--roman-silver-gradient);
+    color: var(--rich-black);
+}
 .btns a:last-of-type{
     background: var(--roman-silver-gradient);
+    box-shadow: none;
+}
+.btns a:last-of-type:hover{
+    text-decoration: underline;
 }
 .text-box::before{
     background-image: url(images/hero-img-mobile.png);
